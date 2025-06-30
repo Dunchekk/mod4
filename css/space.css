@@ -107,7 +107,7 @@ nav {
 #textBlock1 {
     position: absolute;
     padding-bottom: 20vw;
-    top: 30vw;
+    top: 20vw;
     left: 20vw;
     z-index: 999;
     user-select: none;
