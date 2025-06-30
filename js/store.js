@@ -40,7 +40,7 @@ buttonOne.addEventListener('click', function() {
 
     stationText = `станция & 3 датчика x${stationNubmer};`;
 
-    itemsInCard.textContent = `${stationText}, ${sensorText}`
+    itemsInCard.textContent = `${stationText} ${sensorText}`
     itemNumberBlock1.textContent = `${itemNumber}`
     itemNumberBlock2.textContent = `${itemNumber}`
 
