@@ -1,0 +1,49 @@
+* {
+    font-family: 'IBMPlexMono'; 
+    color: white;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    cursor: pointer;
+}
+a {
+    color:inherit;
+    text-decoration:none;
+
+}
+ 
+
+/* FONT ADAPTIVES */
+
+@media screen and (min-width: 1920px) {                                                    /*    1920px    */
+
+    * {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {                            /*    1440px    */ 
+
+    * {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (min-width: 320px)and (max-width: 1439px) {                            /*    320px    */
+
+    * {
+        font-size: 12px;
+    }
+    
+}

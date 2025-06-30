@@ -1,0 +1,476 @@
+@import url(font.css);
+@import url(reset.css);
+
+body {
+    margin: 0;
+    background: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+} 
+
+@media screen and (min-width: 700px) {  
+
+#subDiv1{
+    width: 26vw;
+    height: 37vw;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#subDiv2{
+    width: 26vw;
+    height: 37vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#subDiv3{
+    width: 26vw;
+    height: 37vw;
+    margin-right: 2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#model1 {
+    width: 28vw;
+    height: 28vw;
+}
+
+#model2 {
+    width: 28vw;
+    height: 28vw;
+}
+
+#model3 {
+    width: 28vw;
+    height: 28vw;
+}
+
+#textBlock1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#textBlock2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#textBlock3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#maindiv {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 10vw;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+}
+
+#subText {
+    color: #ffffff;
+    position: absolute;
+    bottom: 15vh;
+}
+
+#blendScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../support/imgs/back.png);
+    backdrop-filter: blur(1px);
+    z-index: 980;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: nav 2s;
+}
+
+form {
+    width: 40vw;
+    height: 40vh;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    flex-direction: column;
+    position: absolute;
+}
+
+#x {
+    cursor: pointer;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+}
+
+#TB3S {
+    cursor: pointer;
+    user-select: none;
+}
+
+#TB1S {
+    cursor: pointer;
+    user-select: none;
+
+}
+
+input {
+    background: black;
+    border: 0;
+    width: 100%;
+    height: 90%;
+    padding-left: 1vw;
+}
+
+input::placeholder {
+    color: rgb(188, 188, 188);
+}
+
+input:focus {outline:none;}
+
+.inputBox {
+    width: 15vw;
+    height: 3vw;
+    border: 1px white solid;
+    border-radius: 0;
+    color:#ffffff;
+    background: black;
+    display: flex;
+}
+
+#cardText {
+    margin-top: 1.5vw;
+}
+
+#submit2 {
+    padding-left: 0;
+    color: rgb(255, 255, 255);
+}
+
+#submit {
+    margin-bottom: 1.5vw;
+}
+
+#itemsInCard {
+    margin-top: -2vw;
+}
+
+nav {
+    opacity: 0;
+    text-align: center;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: nav 3s ease 2s forwards;
+    box-shadow: 0px 3vw 30px 0px rgba(0, 0, 0, 0.6) inset;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    user-select: none;
+    cursor: pointer; 
+    position: relative;
+}
+
+#span_nav_one {
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+#span_nav_two{
+    margin-top: 1vw;
+}
+
+#span_nav_three {
+    margin-top: 1vw;
+}
+
+#span_nav_four{
+    margin-top: 1vw;
+}
+
+#span_nav_fifth {
+    margin-top: 1vw;
+}
+
+#span_nav_sixth {
+    margin-right: 2vw;
+    margin-top: 1vw;
+}
+
+#span_nav_seven {
+
+    position: absolute;
+    bottom: 3vw;
+    left: 2vw;
+    z-index: 900;
+    color: white;
+} 
+
+#span_nav_eight {
+
+    position: absolute;
+    bottom: 3vw;
+    right: 2vw;
+    z-index: 900;
+    color: white;
+} 
+
+.nav2 {
+    opacity: 0;
+    width: 100vw;
+    height: 5vw;
+    animation: nav 3s ease 2s forwards;
+    position: fixed;
+    z-index: 900;
+    top: 95vh;
+    left: 0;
+    box-shadow: 0px -3vw 30px 0px rgba(0, 0, 0, 0.6) inset;
+}
+#xx {
+    display: none;
+}
+
+}
+
+
+@media screen and (max-width: 699px) {  
+
+    #subDiv1{
+        width: 90vw;
+        height: 60vw;
+        margin-left: 2vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;    
+    }
+    #subDiv2{
+        width: 90vw;
+        height: 60vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;    
+    }
+    #subDiv3{
+        width: 90vw;
+        height: 60vw;
+        margin-right: 2vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;    
+    }    
+    #model1 {
+        width: 28vw;
+        height: 28vw;
+    }
+    #model2 {
+        width: 28vw;
+        height: 28vw;
+    }
+    #model3 {
+        width: 28vw;
+        height: 28vw;
+    }
+    #textBlock1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #textBlock2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #textBlock3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #maindiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        margin-top: 10vw;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 0;
+    }
+    #subText {
+        color: #ffffff;
+        width: 90vw;
+        text-align: center;
+        bottom: 15vh;
+    }
+    #blendScreen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url(../support/imgs/back.png);
+        backdrop-filter: blur(1px);
+        z-index: 980;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        animation: nav 2s;
+    }
+    
+    form {
+        width: 90vw;
+        height: 40vh;
+        background: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center ;
+        flex-direction: column;
+        position: absolute;
+    }
+    
+    #x {
+        cursor: pointer;
+        position: absolute;
+        top: 2vw;
+        right: 2vw;
+    }
+    
+    #TB3S {
+        cursor: pointer;
+        user-select: none;
+    }
+    #TB1S {
+        cursor: pointer;
+        user-select: none;
+    
+    }
+    
+    input {
+        background: black;
+        border: 0;
+        width: 100%;
+        height: 90%;
+        padding-left: 1vw;
+    }
+    input::placeholder {
+        color: rgb(188, 188, 188);
+    }
+    input:focus {outline:none;}
+    
+    .inputBox {
+        width: 75vw;
+        height: 10vw;
+        border: 1px white solid;
+        border-radius: 0;
+        color:#ffffff;
+        background: black;
+        display: flex;
+    }
+    
+    #cardText {
+        margin-top: 1.5vw;
+    }
+    
+    #submit2 {
+        padding-left: 0;
+        color: rgb(255, 255, 255);
+    }
+    
+    #submit {
+        margin-bottom: 1.5vw;
+    }
+    
+    #itemsInCard {
+        margin-top: -2vw;
+    }
+    
+    nav {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    #span_nav_seven {
+        opacity: 0;
+    } 
+    #span_nav_eight {
+        position: absolute;
+        top: 6vw;
+        right: 6vw;
+        z-index: 900;
+    } 
+    .nav2 {
+        opacity: 0;
+        width: 50vw;
+        height: 10vw;
+        animation: nav 3s ease 2s forwards;
+        position: fixed;
+        z-index: 900;
+        top: 0;
+        right: 0;
+    }
+    #xx {
+        display: block;
+        position: fixed;
+        top: 6vw;
+        left: 6vw;
+        z-index: 999;
+        padding-bottom: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+@keyframes nav {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

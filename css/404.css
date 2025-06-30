@@ -1,0 +1,17 @@
+@import url(font.css);
+@import url(reset.css);
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../support/imgs/404.png);
+    background-size: cover;
+}
+#id404 {
+    font-size: 200px;
+}
+#button {
+    margin-top: 1vw;
+}

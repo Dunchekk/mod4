@@ -1,0 +1,168 @@
+@import url(font.css);
+@import url(reset.css);
+ 
+body {
+    margin: 0;
+    background: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+} 
+
+#model_cont1 {
+    width: 100vw;
+    height: 100vh;
+    opacity: 70%;
+    z-index: 1;
+}
+#model_cont2 {
+    width: 100vw;
+    height: 100vh;
+    opacity: 70%;
+    z-index: 1;
+}
+
+p {
+    margin-top: 0.8vw;
+}
+
+@media screen and (min-width: 700px) {  
+
+nav {
+    color: white;
+    opacity: 0;
+    text-align: center;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: nav 3s ease 2s forwards;
+    box-shadow: 0px 3vw 30px 0px rgba(0, 0, 0, 0.6) inset;
+
+}
+.nav {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+.btn {
+    user-select: none;
+    cursor: pointer; 
+    position: relative;
+}
+#span_nav_one {
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+#span_nav_two{
+    margin-top: 1vw;
+}
+#span_nav_three {
+    margin-top: 1vw;
+}
+#span_nav_four{
+    margin-top: 1vw;
+}
+#span_nav_fifth {
+    margin-top: 1vw;
+}
+
+#span_nav_sixth {
+    margin-right: 2vw;
+    margin-top: 1vw;
+}
+#span_nav_seven {
+
+    position: absolute;
+    bottom: 3vw;
+    left: 2vw;
+    z-index: 998;
+    color: white;
+} 
+.nav2 {
+    opacity: 0;
+    width: 100vw;
+    height: 5vw;
+    animation: nav 3s ease 2s forwards;
+    position: fixed;
+    z-index: 998;
+    top: 95vh;
+    left: 0;
+    box-shadow: 0px -3vw 30px 0px rgba(0, 0, 0, 0.6) inset;
+}
+
+#textBlock1 {
+    position: absolute;
+    padding-bottom: 20vw;
+    top: 30vw;
+    left: 20vw;
+    z-index: 999;
+    user-select: none;
+    width: 40vw;
+    height: auto;
+    animation: nav 3s ;
+}
+
+#xx {
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 699px) {  
+
+nav {
+    display: none;
+}
+.nav {
+    display: none;
+}
+.nav2 {
+    display: none;
+}
+
+#textBlock1 {
+    position: absolute;
+    padding-bottom: 20vw; 
+    top: 20vw;
+    left: 6vw;
+    z-index: 999;
+    user-select: none;
+    width: 88vw;
+    height: auto;
+    animation: nav 3s ;
+}
+
+#xx {
+    display: block;
+    position: fixed;
+    top: 6vw;
+    left: 6vw;
+    color: white;
+    z-index: 999;
+    padding-bottom: 5vw;
+    padding-right: 5vw;
+}
+}
+
+@keyframes nav {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
