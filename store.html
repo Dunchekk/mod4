@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="cube lab store" content="интернет-магазин датчиков по отслеживанию шума окружающей среды cube lab">
+
+    <title>cube lab / store</title>
+
+    <link rel="stylesheet" href="./css/store.css">
+    <link rel="icon" type="image/png" href="./support/imgs/block.png">
+
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@v0.174.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.174.0/examples/jsm/"
+      }
+    } 
+    </script>
+
+    <script defer type="module" src="./js/store.js"></script>
+
+</head> 
+ 
+<body>
+
+<!-- three.js part and main texts -->
+
+  <div id="maindiv">
+
+    <div id="subDiv1">
+      <div id="model1"></div>
+      <div id="textBlock1">
+        <div id="TB1T">item/ station and 3 sensors<br>number/ 001<br>station connection/ 3<br>release/ 31/01/2025<br></div><span id="TB1S">add to card</span></div>
+    </div>
+
+    <div id="subDiv2">
+      <div id="model2"></div>
+      <div id="textBlock2"><div id="TB1T">item/ station<br>number/ 002<br>station connection/ 1<br>release/ 31/01/2025<br></div><span id="TB2S">out of stock</span></div>
+    </div>
+
+    <div id="subDiv3">
+      <div id="model3"></div>
+      <div id="textBlock3"><div id="TB1T">item/sensor<br>number/ 003<br>station connection/ 1<br>release/ 31/01/2025<br></div><span id="TB3S">add to card</span></div>
+    </div>
+
+    <span id="subText">следующий дроп зависит от&nbsp;спроса и&nbsp;технических возможностей</span>
+
+  </div>
+    
+<!-- for desktop navigation -->
+
+  <nav>
+      <div class="nav"><a id="span_nav_one" class="btn" href="./map.html">карта&nbsp;датчиков</a><a id="span_nav_two" class="btn" href="./space.html">пространство</a><a id="span_nav_three" class="btn" href="./store.html">магазин</a><a id="span_nav_four" class="btn" href="./events.html">события</a><a id="span_nav_sixth" class="btn" href="https://dunchekk.github.io/mod3/">устройство&nbsp;датчиков</a>
+      </div>
+  </nav>
+  <div class="nav2">
+      <a id="span_nav_seven" class="btn" href="./about.html">cube&nbsp;lab</a><span id="span_nav_eight" class="btn">корзина(<span id="itemNumber1"></span>)</span>
+  </div>
+
+<!-- form -->
+
+  <div id="blendScreen">
+    <form action="" method="">
+
+      <span id="x">x</span>
+
+      <span id="cardText">корзина[<span id="itemNumber2">9</span>]</span>
+      <span id="itemsInCard">добавьте что-то в корзину</span>
+
+      <div class="inputBox"><input required type="text" placeholder="name"></div>
+      <div class="inputBox"><input required type="text" placeholder="email"></div>
+      <div id='submit' class="inputBox"><input id='submit2' type="submit" value="отправить"></div>
+    </form>
+  </div>
+
+<!-- for mobile navigation -->
+
+  <a id="xx" href="index.html">X</a> 
+    
+</body>
+</html>

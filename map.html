@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="cube lab map" content="интерактивная карта датчиков по отслеживанию шума окружающей среды cube lab">
+
+    <title>cube lab / sensor map</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/map.css">
+    <link rel="icon" type="image/png" href="./support/imgs/block.png">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8163219a-438c-4ffd-b2b5-9bfded01447f&lang=ru_RU"
+    type="text/javascript"></script>    
+    <script defer type="text/javascript" src="./js/map.js"></script>
+
+</head>
+
+<body>
+
+<!-- for desktop navigation -->
+
+<nav>
+    <div class="nav"><a id="span_nav_one" class="btn" href="./map.html">карта&nbsp;датчиков</a><a id="span_nav_two" class="btn" href="./space.html">пространство</a><a id="span_nav_three" class="btn" href="./store.html">магазин</a><a id="span_nav_four" class="btn" href="./events.html">события</a><a id="span_nav_sixth" class="btn" href="https://dunchekk.github.io/mod3/">устройство&nbsp;датчиков</a>
+    </div>
+</nav>
+<div class="nav2">
+    <a id="span_nav_seven" class="btn" href="./about.html">cube&nbsp;lab</a>
+</div>
+
+<!-- open-menu block -->
+
+<div id="openMenu">
+
+    <div class="openMenuTextBlock">
+        <div id="OMTB1">датчик/<br>номер/<br>установка/<br><br><br><br>db/<br>координаты/<br><br>около/<br></div>
+        <div id="OMTB2">
+            <span id="OMTBsens">00049523</span><br>
+            <span id="OMTBnum">050</span><br>
+            <span id="OMTBdate">01/01/2024</span><br><br><br><br>[<span id = "db1">/</span> db]<br>
+            <span id="OMTBcoord">широта: 55.754045<br>долгота: 37.640688</span><br>
+            <span id="OMTBnear">ground солянка, сюр...</span>
+        </div>
+    </div>
+</div>
+
+<!-- for mobile navigation -->
+
+<a id="xx" href="index.html">X</a>
+
+<!-- yandex map part -->
+<div id="YMap"></div>
+
+</body>
+</html>
